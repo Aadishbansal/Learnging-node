@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Ejs</title>
+</head>
+
+<body>
+    <h3>HEllo from ejs fil</h3>
+
+    <p>
+        <%= data[0] %>
+    </p>
+    <p>
+        <%= data[1] %>
+    </p>
+    <p>
+        <%= data[2] %>
+    </p>
+    <p>
+        <%= data[3] %>
+    </p>
+    <p>
+        <%= data[4] %>
+    </p>
+    <p>
+        <%= data[5] %>
+    </p>
+    <p>for loop</p>
+    <% for(let i=0; i<data.length;i++){ %>
+        <h3>
+
+            <%= data[i] %>
+        </h3>
+
+        <% } %>
+
+            <h1>map method </h1>
+            <% data.map(item=>{%>
+                <p>
+                    <%=item%>
+                </p>
+                <% }) %>
+                    <h1>if else </h1>
+                    <% if(data.length<5){ %>
+                        <p>
+                            length is greater than 5
+                        </p>
+                        <% } else {%>
+                            <p>
+                                length is less than 5
+                            </p>
+                            <% }%>
+                                <h1>ternary operator</h1>
+                                <p>
+                                    <%=data.length>5?"length is greater than 5":"length is less than 5"%>
+                                </p>
+</body>
+
+</html>
